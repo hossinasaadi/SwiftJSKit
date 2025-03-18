@@ -16,7 +16,7 @@ let package = Package(
         .binaryTarget(
             name: "GoJsKit",
             url: "https://github.com/hossinasaadi/gojskit/releases/latest/download/GoJsKit.xcframework.zip",
-            checksum: "104987ba97e4b90a1eca8ef391dd10219d19d78eff8672362e04dccd9d00c60d"
+            checksum: "41d99f68694264205fe6cfa4ddee9262c03008ecfccfd449ce7f9837f94eeb82"
         ),
 
         // Targets can depend on other targets in this package and products from dependencies.
