@@ -6,9 +6,12 @@ import GoJsKit
 public class SwiftJSKit {
     private var context:GojsCore = GojsCore()
     
-    public func JSContext() -> GojsCore {
-        return self.context
-    }
+    public init() {}
+    
+//    go implement of GojsCore
+//    public func JSContext() -> GojsCore {
+//        return self.context
+//    }
     
     public func evaluateScript(script:String) {
         context.evaluateScript(script)
@@ -18,7 +21,6 @@ public class SwiftJSKit {
         if let jsonData = try? JSONSerialization.data(withJSONObject: params, options: []),
            let jsonString = String(data: jsonData, encoding: .utf8) {
             return context.callFunc(functionName, jsonParams: jsonString)
-
         }
         return ""
     }
